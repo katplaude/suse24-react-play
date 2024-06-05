@@ -2,6 +2,7 @@ import './App.css'
 import Card from './Card/Card.jsx'
 import Chip from "./Chip/Chip.jsx";
 import Tooltip from "./Tooltip/Tooltip.jsx";
+import MyList from "./MyList/MyList.jsx";
 
 const myReason = 'whatever';
 
@@ -12,9 +13,11 @@ function App() {
         <Tooltip label={'Hover me'}>
             This is the super secret tip.
         </Tooltip> and more
-        <Card
-            reason={myReason}
-            headline={'My card'}/>
+        <Card headline={'My card'} onUserAction={()=> console.log('Yeah')}>
+            This is my card text.
+        </Card>
+
+        <MyList items={[1,1,2,3,5,8,13]}/>
     </div>;
 }
 

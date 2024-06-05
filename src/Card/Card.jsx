@@ -1,16 +1,23 @@
 import './Card.css'
 import PropTypes from 'prop-types';
 
-function Card({reason, headline}){
+
+function Card({children, headline, onUserAction}){
+
+    function handleClick() {
+        onUserAction();
+    }
+
     return <article>
-        <h3>{headline}</h3>
-        JSX is strange becaus {reason}
+        <h3 onClick={handleClick}>{headline}</h3>
+        {children}
     </article>
 }
 
 Card.propTypes  = {
-    reason: PropTypes.string,
-    headline: PropTypes.string
+    children: PropTypes.node,
+    headline: PropTypes.string,
+    onUserAction: PropTypes.func,
 }
 
 export default Card;
