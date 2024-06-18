@@ -3,6 +3,10 @@ import Card from './Card/Card.jsx'
 import Chip from "./Chip/Chip.jsx";
 import Tooltip from "./Tooltip/Tooltip.jsx";
 import MyList from "./MyList/MyList.jsx";
+import Task from "./Task/Task.jsx";
+import Board from "./Tictactoe/TicTacToe.jsx"
+import Form from "./Form/Form.jsx";
+
 
 const myReason = 'whatever';
 
@@ -18,7 +22,16 @@ function App() {
         </Card>
 
         <MyList items={[1,1,2,3,5,8,13]}/>
-    </div>;
+        <Task>
+        </Task>
+
+        <Board></Board>
+        <Form>
+
+        </Form>
+
+    </div>
 }
+
 
 export default App
