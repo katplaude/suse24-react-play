@@ -7,7 +7,6 @@ import Task from "./Task/Task.jsx";
 import Board from "./Tictactoe/TicTacToe.jsx"
 import Form from "./Form/Form.jsx";
 import {Route, Switch} from "wouter";
-import { Link } from "wouter"
 import Navigation from "./Navigation/Navigation.jsx";
 import Account from "./Account/Account.jsx";
 import GoForm from "./FormRedirect/FormRedirect.jsx";
